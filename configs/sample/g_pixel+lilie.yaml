@@ -1,0 +1,10 @@
+checkpoint: checkpoints/jit-t2i/g_pixel+lilie-390600
+captions: captions.jsonl
+output_dir: samples/g_pixel+lilie
+cfg_scales: "4.85"  # selected on GPIC Validation-50K, as in the paper's results tables
+num_steps: 50
+batch_size: 128
+use_ema: true
+seed: 0
+save_png: 16
+distributed: true

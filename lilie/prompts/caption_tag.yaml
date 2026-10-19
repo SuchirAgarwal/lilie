@@ -1,0 +1,5 @@
+prompt: >
+  Your goal is to write a compressed keyword-style caption (unordered tags) for the given image.
+  The output must be a short, unordered list of tags describing the main visible content.
+user_prompt: |
+  Write a keyword-style caption (tag-style) for the image shown.

@@ -1,0 +1,38 @@
+image_size: 256
+patch_size: 16
+channels: 192
+blocks: 4
+layers_per_block: 4
+clip_range: 1.0
+
+sigma: 0.25
+feature_rms: 0.5
+latent_m2_decay: 0.99
+
+vlm_name: HuggingFaceTB/SmolVLM-256M-Instruct
+lora_rank: 64
+lora_alpha: 32.0
+max_caption_tokens: 256
+
+batch_size: 256
+lr: 8.0e-4
+vlm_lr: 4.0e-4
+min_lr: 1.0e-6
+warmup_steps: 20000
+total_steps: 390600
+beta1: 0.9
+beta2: 0.95
+weight_decay: 1.0e-4
+autoclip_percentile: 10.0
+ema_decay: 0.9999
+seed: 100
+
+num_workers: 8
+run_dir: runs/lilie-tiny
+log_every: 20
+val_every: 3906
+val_num_images: 4096
+save_every: 500
+milestone_steps: "3906, 39060, 100000, 200000, 300000, 390600"
+wandb_project: ""
+distributed: true

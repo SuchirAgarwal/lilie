@@ -1,0 +1,19 @@
+# JAX: install the build for your accelerator, e.g.
+#   pip install "jax[tpu]==0.10.2" -f https://storage.googleapis.com/jax-releases/libtpu_releases.html
+#   pip install "jax[cuda12]==0.10.2"
+jax==0.10.2
+flax==0.12.7
+optax==0.2.8
+numpy==2.5.1
+pyyaml==6.0.3
+safetensors==0.8.0
+transformers==5.12.1
+tokenizers==0.22.2
+huggingface_hub==1.23.0
+pillow==12.2.0
+webdataset==0.2.111
+# CPU-only torch/torchvision: the data loader and image transforms only.
+torch==2.11.0
+torchvision==0.26.0
+# Optional: W&B logging
+wandb==0.28.0

@@ -1,0 +1,46 @@
+input_size: 256
+patch_size: 16
+hidden_size: 1536
+num_heads: 24
+num_blocks: 16
+num_text_blocks: 4
+bottleneck_dim: 256
+remat: true
+
+text_encoder: Qwen/Qwen3-1.7B
+max_length: 300
+
+P_mean: -0.8
+P_std: 0.8
+timeshift: 1.0
+t_eps: 0.05
+null_condition_p: 0.1
+
+lilie_checkpoint: checkpoints/lilie/small
+lilie_lambda: 2.0
+lilie_use_ema: false
+
+batch_size: 256
+lr: 1.0e-4
+warmup_steps: 4000
+cooldown_steps: 0
+total_steps: 390600
+beta1: 0.9
+beta2: 0.95
+weight_decay: 0.0
+grad_clip: 1.0
+ema_decay: 0.9999
+seed: 0
+
+num_workers: 8
+prefetch_factor: 8
+run_dir: runs/jit-g-pixel+lilie
+log_every: 100
+val_every: 3906
+val_num_images: 4096
+sample_every: 5000
+sample_cfg: 6.25
+save_every: 500
+milestone_steps: "39060, 100000, 200000, 300000, 390600"
+wandb_project: ""
+distributed: true

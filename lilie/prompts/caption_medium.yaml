@@ -1,0 +1,5 @@
+prompt: >
+  Your goal is to write a medium-length caption (2-3 sentences) that describes the given image in simple language that a middle school student can understand.
+  The caption must be enough to identify the main subject and the basic setting/action.
+user_prompt: |
+  Please write a caption (2-3 sentences) for the image shown.

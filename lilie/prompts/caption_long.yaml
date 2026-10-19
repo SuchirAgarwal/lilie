@@ -1,0 +1,5 @@
+prompt: >
+  Your goal is to write a long, highly detailed caption (5-7 sentences) that describes the given image in simple language that a middle school student can understand.
+  The caption should include enough detail for them to understand what appears in the foreground and background and picture how the scene is arranged.
+user_prompt: |
+  Please write a caption (5–7 sentences) for the image shown.
